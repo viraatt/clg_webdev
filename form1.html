@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .html{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #39fa99;
+        }
+        .container{
+            
+            background-color: rgb(238, 252, 239);
+            /* border: 0.2em solid black; */
+            padding:2em;
+            border-radius:20px;
+            width:65%;
+            margin:auto;
+            margin-top:2em;
+            max-width:300px;
+            box-shadow: 0 0 10px 10px rgba(255,255,255,0.2);
+            height:auto;
+        }
+        forn{
+            display:flex;
+            flex-direction:column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+       .a{
+        display:block;
+        margin-top:0.001em;
+        margin-bottom:0.001em;
+        width:100%;
+        padding:0.01em;
+       }
+       label{
+        text-align: left;
+        margin-top:0.5em;
+        margin-bottom:0.5em;
+        padding:1%;
+        font-size: 0.8em;;
+        width:100%;
+       }
+       input{
+        accent-color:#39fa99 ;
+        cursor: auto;
+        background-color: transparent;
+        border: 0;
+        border-radius: 20px;
+        padding:1%;
+       }
+       .sub{
+        background-color:#39fa99;
+        margin-left :38%;
+        padding:5px;
+        border-radius:0;
+        border:1px solid black;
+        align-self: center;
+       }
+       .sub:hover{
+        box-shadow:0 0 10px 10px #39fa9920;
+        transition:0.5s;
+       }
+    </style>    
+</head>
+<body>
+    <div class="container">
+    <form>
+        <!-- <label for="year" >Select your year:
+            <select name="year" id="year">
+
+                <option value ="first">First Year</option>
+                <option value ="second">Second Year</option>
+                <option value ="third">Third Year</option>
+                <option value ="fourth">Fourth Year</option>
+            </select>
+        </label>
+        <br>
+        <label for="roll">Enter your roll number:
+            <input type="number" id="roll" placeholder="Enter your roll number">
+        </label>
+        <br> -->
+        <label for="fn" >First Name:
+            <input class="a"type="text" id="fn" placeholder="Enter your first name">
+        </label><br>
+        <label for="ln" >Last Name:
+            <input class="a"type="text" id="ln" placeholder="Enter your first name">
+        </label><br>
+        <label for="email" >Email:
+            <input class="a"type="email" id="email" placeholder="Enter your email">
+        </label><br>
+        <label for="pwd" >Password:
+            <input class="a"type="password" id="pwd" placeholder="Enter your password">
+        </label><br>
+        <label for="recheck" >Re-enter Password:
+            <input class="a" type="password" id="recheck" placeholder="Re-enter your password">
+        </label><br>
+        <label for="gender">Gender
+            <select name="gender" id="gender">
+            <option value ="m">Male</option>
+            <option value ="f">Female</option>
+            <option value ="o">other</option>
+            </select>
+<br>
+            <label for="section">Section
+                <label for="a">
+                    <input type="radio" id="a" name="section" value="A"> A
+                </label>
+                <label for="b">
+                    <input type="radio" id="b" name="section" value="B"> B
+                </label>
+                <label for="c">
+                    <input type="radio" id="c" name="section" value="C"> C
+                </label>    
+            </label>
+        </label><br>
+        <label for="checkbox">
+            
+            <input type="checkbox" id="checkbox" name="checkbox" value="checkbox"> I agree to the terms and conditions
+        </label><br>
+        <input class="sub"type="submit" value="Submit">
+        
+    </form>
+    <div>
+</body>
+</html>
