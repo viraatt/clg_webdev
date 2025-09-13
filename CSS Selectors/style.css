@@ -1,0 +1,27 @@
+ol {
+  margin-left: -40px;
+  margin-top: -20px;
+  list-style-position: inside;
+}
+
+
+h1,h2{
+  text-align: center;
+}
+
+.note{
+  color:red;
+  text-align:center;
+}
+.note[value="2"]{
+  color:black;
+}
+.note[value="3"]{
+  color:green;
+}
+.note[value="4"]{
+  color:blue;
+}
+.note[value="5"]{
+  color:black;
+}
